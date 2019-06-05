@@ -54,10 +54,9 @@
 # Don't ignore Doxygen configurations.
 !/docs/Doxyfile
 
-# Don't ignore text and other documentation files. Any images, etc must be 
+# Don't ignore markdown documentation files. Any images, etc must be 
 # added manually by force. This keeps the repository size smaller by default.
 !/docs/*.md
-!/docs/*.txt
 
 ################################################################################
 # Addon Metadata

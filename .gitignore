@@ -66,10 +66,7 @@
 !addon_config.mk
 !ofxaddons_thumbnail.png
 
-!LICEN*E.md
-!README.md
-!CHANGELOG.md
-!CODE_OF_CONDUCT.md
+!*.md
 
 ################################################################################
 # Addon Libraries and Source
@@ -88,10 +85,12 @@
 /src/*
 
 # Allow C/C++/Objective-C source files.
-!/src/**/*.h*
-!/src/**/*.c*
-!/src/**/*.m*
-!/src/**/*.txt
+!/src/**/*.h
+!/src/**/*.hpp
+!/src/**/*.c
+!/src/**/*.cpp
+!/src/**/*.m
+!/src/**/*.mm
 
 ################################################################################
 # Examples

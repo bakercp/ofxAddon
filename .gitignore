@@ -127,6 +127,8 @@
 
 /examples/*/*/*
 
+!/examples/*
+!/examples/*/*
 !/examples/*/*/src
 !/examples/*/*/src/*.h
 !/examples/*/*/src/**/*.hpp

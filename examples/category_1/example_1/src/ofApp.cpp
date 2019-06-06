@@ -10,7 +10,7 @@
 
 void ofApp::setup()
 {
-    ofLog("ofApp::setup") << "Nothing to see.";
+    ofLogNotice("ofApp::setup") << "Nothing to see.";
 
     ofExit();
 }

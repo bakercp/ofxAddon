@@ -18,6 +18,10 @@ function download() {
 	# tar -xf ${filename}.tar.gz
 	# mv utf8proc-$VER utf8proc
 	# rm ${filename}.tar.gz
+
+	# Trick to make it think we downloaded something.
+	mkdir example/
+
 }
 
 # prepare the build environment, executed inside the lib src dir

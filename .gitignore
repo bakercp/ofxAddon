@@ -201,6 +201,9 @@
 # ofx submodule.
 !/scripts/ofx
 
+# Bootstrap script.
+!/scripts/bootstrap.sh
+
 # Continuous integration.
 !/scripts/ci
 /scripts/ci/*/*

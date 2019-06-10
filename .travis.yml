@@ -37,7 +37,7 @@ before_install:
   # - source install.sh
 install:
   - echo "INSTALL ================="
-  - pwd
+  - scripts/./bootstrap.sh
   # - do_install
 before_script:
 script:

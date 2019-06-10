@@ -31,12 +31,31 @@ matrix:
   exclude:
     - compiler: gcc
 before_install:
-  - curl -SLsO https://raw.githubusercontent.com/bakercp/ofxAddonScripts/${OF_BRANCH}/scripts/ci/tools/install.sh
-  - source install.sh
+  - echo "BEFORE INSTALL================="
+  - pwd
+  # - curl -SLsO https://raw.githubusercontent.com/bakercp/ofxAddonScripts/${OF_BRANCH}/scripts/ci/tools/install.sh
+  # - source install.sh
 install:
-  - do_install
+  - echo "INSTALL ================="
+  - pwd
+  # - do_install
+before_script:
 script:
-  - do_script
+  - echo "SCRIPT ================="
+  - pwd
+  # - do_script
+after_script:
+  - echo "AFTER SCRIPT ================="
+  - pwd
+
+after_success:
+  - echo "AFTER SUCCESS ================="
+  - pwd
+
+after_failure:
+  - echo "AFTER FAILURE ================="
+  - pwd
+
 
 git:
   depth: 10

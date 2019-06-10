@@ -30,32 +30,15 @@ matrix:
   # see https://github.com/travis-ci/travis-ci/issues/1228
   exclude:
     - compiler: gcc
-before_install:
-  - echo "BEFORE INSTALL================="
-  - pwd
-  # - curl -SLsO https://raw.githubusercontent.com/bakercp/ofxAddonScripts/${OF_BRANCH}/scripts/ci/tools/install.sh
-  # - source install.sh
-install:
-  - echo "INSTALL ================="
-  - scripts/./bootstrap.sh
-  # - do_install
-before_script:
+# before_install:
+# install:
+# - scripts/ofx/./ofx -v bootstrap
+# before_script:
 script:
-  - echo "SCRIPT ================="
-  - pwd
-  # - do_script
-after_script:
-  - echo "AFTER SCRIPT ================="
-  - pwd
-
-after_success:
-  - echo "AFTER SUCCESS ================="
-  - pwd
-
-after_failure:
-  - echo "AFTER FAILURE ================="
-  - pwd
-
+  - scripts/ofx/./ofx -v ci
+# after_script:
+# after_success:
+# after_failure:
 
 git:
   depth: 10

@@ -32,11 +32,11 @@ matrix:
   exclude:
     - compiler: gcc
 # before_install:
-# install:
-# - scripts/ofx/./ofx -v bootstrap
+install:
+  - scripts/ofx/./ofx -v ci install
 # before_script:
 script:
-  - scripts/ofx/./ofx -v ci
+  - scripts/ofx/./ofx -v ci script
 # after_script:
 # after_success:
 # after_failure:

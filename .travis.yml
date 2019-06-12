@@ -25,7 +25,7 @@ matrix:
   - os: osx
     # osx_image: xcode10.1
     compiler: clang
-    env: OF_ROOT="~/openFrameworks" TARGET="osx" OF_BRANCH="master"
+    env: TARGET="osx" OF_BRANCH="master"
 
   # Exclude the default build that would otherwise be generated
   # see https://github.com/travis-ci/travis-ci/issues/1228

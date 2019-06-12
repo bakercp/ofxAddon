@@ -29,8 +29,8 @@ matrix:
 
   # Exclude the default build that would otherwise be generated
   # see https://github.com/travis-ci/travis-ci/issues/1228
-  exclude:
-    - compiler: gcc
+  #exclude:
+  #  - compiler: gcc
 # before_install:
 install:
   - git clone --depth=1 --branch=${TRAVIS_BRANCH} https://github.com/openFrameworks/openFrameworks.git ~/openFrameworks
@@ -43,4 +43,5 @@ script:
 # after_failure:
 
 git:
-  depth: 10
+  depth: 1
+  quiet: true

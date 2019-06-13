@@ -59,6 +59,7 @@ jobs:
         - ls -la
         - cd docs
         - doxygen Doxyfile
+        - touch htom/.nojekyll
       deploy:
         provider: pages
         skip_cleanup: true

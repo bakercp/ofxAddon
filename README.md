@@ -43,7 +43,6 @@ API documentation can be found [here](https://bakercp.github.io/ofxAddon/).
 | Platform          | Stable Branch | Master Branch | Develop Branch | Notes |
 |------------------:|:--------:|:--------:|:---------:|:-------:|
 | **osx**           |[![Build Status](https://travis-ci.org/bakercp/ofxAddon.svg?branch=stable)](https://travis-ci.org/bakercp/ofxAddon)|[![Build Status](https://travis-ci.org/bakercp/ofxAddon.svg?branch=master)](https://travis-ci.org/bakercp/ofxAddon)|[![Build Status](https://travis-ci.org/bakercp/ofxAddon.svg?branch=develop)](https://travis-ci.org/bakercp/ofxAddon)| _None_ |
-| **linux**         |      ❓      |      ❓      |      ❓      | _None_ |
 | **linux64**           |[![Build Status](https://travis-ci.org/bakercp/ofxAddon.svg?branch=stable)](https://travis-ci.org/bakercp/ofxAddon)|[![Build Status](https://travis-ci.org/bakercp/ofxAddon.svg?branch=master)](https://travis-ci.org/bakercp/ofxAddon)|[![Build Status](https://travis-ci.org/bakercp/ofxAddon.svg?branch=develop)](https://travis-ci.org/bakercp/ofxAddon)| _None_ |
 | **linuxarmv6l**   |      ❓      |      ❓      |      ❓      | _None_ |
 | **linuxarmv7l**   |      ❓      |      ❓      |      ❓      | _None_ |

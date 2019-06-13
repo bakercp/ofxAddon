@@ -30,7 +30,7 @@ See [docs/SUPPORT.md](docs/SUPPORT.md).
 
 ## Documentation
 
-API documentation can be found here.
+API documentation can be found [here](https://bakercp.github.io/ofxAddon/).
 
 ## Requirements
 

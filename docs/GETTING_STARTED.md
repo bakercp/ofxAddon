@@ -2,6 +2,6 @@
 
 There are no additional _Getting Started_ notes at this time.
 
-## Trouble-shooting
+## Troubleshooting
 
-See the [docs/TROUBLESHOOTING.md](TROUBLESHOOTING.md) guide.
+See the [Troubleshooting](TROUBLESHOOTING.md) guide.

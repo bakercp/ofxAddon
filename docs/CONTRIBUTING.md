@@ -6,9 +6,9 @@ First, please see the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 # What needs work?
 
-Check out the [TODO](TODO.md) list to see if there 
+Check out the [Todo](TODO.md) list to see if there are any planned items.
 
-Check out the [Help Wanted](../issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag in the issues section for specific ideas or propose your own new ideas.
+Check out the [Help Wanted](../../../issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag in the issues section for specific ideas or propose your own new ideas.
 
 ## Making Pull Requests
 

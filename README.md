@@ -22,11 +22,11 @@ Every effort is made to keep the repository small. Thus sometimes third-party li
 1.   Generate the example project files using the openFrameworks [Project Generator](http://openframeworks.cc/learning/01_basics/how_to_add_addon_to_project/).
 2.   Open the Project Files in your Integrated Development Environment (IDE), or run `make && make run` from the example directory.
 
-For more, see [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
+For more, see the [Getting Started](docs/GETTING_STARTED.md) guide.
 
 ## Support
 
-See [docs/SUPPORT.md](docs/SUPPORT.md).
+See the [Support](docs/SUPPORT.md) guide.
 
 ## Documentation
 
@@ -75,7 +75,7 @@ The `master` branch of this repository is meant to be compatible with the openFr
 
 The `develop` branch of this repository is used by developers to test new features. It is usually compatible with the openFrameworks [master branch](https://github.com/openframeworks/openFrameworks/tree/master), but is compatibility is not guaranteed. The `develop` branch should not be used for production.
 
-Some past openFrameworks releases are supported via tagged versions and [releases](releases/), but only `stable` and `master` branches are actively supported.
+Some past openFrameworks releases are supported via tagged versions and [releases](/releases/), but only `stable` and `master` branches are actively supported.
 
 ## Versioning
 
@@ -83,16 +83,16 @@ This project uses [Semantic Versioning](http://semver.org/spec/v2.0.0.html), alt
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md)
+See the [Changelog](CHANGELOG.md).
 
 ## Code of Conduct
 
-See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+See the [Code of Conduct](docs/CODE_OF_CONDUCT.md).
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [Contributing](docs/CONTRIBUTING.md) guide.
 
 ## Licensing
 
-See [LICENSE.md](LICENSE.md)
+See the [License](LICENSE.md).

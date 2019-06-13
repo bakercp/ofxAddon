@@ -13,21 +13,21 @@ git:
 
 matrix:
   include:
-    - os: linux
-      dist: trusty
-      sudo: required
-      cache: ccache
-      env: TARGET="linux64"
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - realpath
-            - gcc-4.9
-            - g++-4.9
-            - gdb
-            
+    # - os: linux
+    #   dist: trusty
+    #   sudo: required
+    #   cache: ccache
+    #   env: TARGET="linux64"
+    #   addons:
+    #     apt:
+    #       sources:
+    #         - ubuntu-toolchain-r-test
+    #       packages:
+    #         - realpath
+    #         - gcc-4.9
+    #         - g++-4.9
+    #         - gdb
+
     - os: linux
       dist: trusty
       sudo: required
@@ -81,7 +81,20 @@ script:
       wget http://ci.openframeworks.cc/ccache_3.3.4-1_amd64.deb;
       sudo dpkg -i ccache_3.3.4-1_amd64.deb;
     fi
-  -  /usr/bin/env bash ~/openFrameworks/scripts/ofx/ofx ci script ${TRAVIS_REPO_SLUG#*/}
+
+  - if [ "$TARGET" == "linuxarmv6l" ]; then
+      export CXXFLAGS="${CXXFLAGS} -ftrack-macro-expansion=0";
+      sed -i "s/PLATFORM_OPTIMIZATION_CFLAGS_DEBUG = .*/PLATFORM_OPTIMIZATION_CFLAGS_DEBUG = -g0/" ${OF_ROOT}/libs/openFrameworksCompiled/project/makefileCommon/config.linux.common.mk;
+      export GCC_PREFIX=arm-linux-gnueabihf;
+      export GST_VERSION=1.0;
+      export RPI_ROOT=${OF_ROOT}/scripts/ci/${TARGET}/raspbian;
+      export TOOLCHAIN_ROOT=${OF_ROOT}/scripts/ci/${TARGET}/rpi_toolchain;
+      export PLATFORM_OS=Linux;
+      export PLATFORM_ARCH=armv6l;
+      export PKG_CONFIG_LIBDIR=${RPI_ROOT}/usr/lib/pkgconfig:${RPI_ROOT}/usr/lib/${GCC_PREFIX}/pkgconfig:${RPI_ROOT}/usr/share/pkgconfig;
+    fi
+
+  - /usr/bin/env bash ~/openFrameworks/scripts/ofx/ofx ci script ${TRAVIS_REPO_SLUG#*/}
   - ccache -s
 # after_script:
 # after_success:

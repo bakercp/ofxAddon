@@ -15,9 +15,11 @@ namespace ofx {
 namespace Addon {
 
 
+/// \brief A demo class.
 class Clazz
 {
 public:
+    /// \brief Create a default instance.
     Clazz();
 
 };

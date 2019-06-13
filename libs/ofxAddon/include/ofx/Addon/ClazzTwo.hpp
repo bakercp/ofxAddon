@@ -9,15 +9,18 @@
 
 
 #include <string>
+#include <iostream>
 
 
 namespace ofx {
 namespace Addon {
 
 
+/// \brief A demo class.
 class ClazzTwo
 {
 public:
+    /// \brief Create a default instance.
     ClazzTwo()
     {
         std::cout << "ClazzTwo!" << std::endl;

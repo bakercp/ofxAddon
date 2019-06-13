@@ -14,9 +14,11 @@
 namespace ofx {
 
 
+/// \brief A demo class that does nothing.
 class ClazzThree
 {
 public:
+    /// \brief Create a default instance.
     ClazzThree();
 
 };

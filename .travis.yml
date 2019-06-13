@@ -55,6 +55,7 @@ jobs:
           packages:
             - doxygen
       script: 
+        - sed 's+docs/++g' README.md # Remove docs/ prefix from README.md for linking.
         - cd docs
         - doxygen Doxyfile
         - touch html/.nojekyll

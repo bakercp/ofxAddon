@@ -1,6 +1,9 @@
 language: c++
 compiler: gcc
 sudo: true
+git:
+  depth: 1
+  quiet: true
 matrix:
   include:
   # fully specify builds, include can't dynamically expand matrix entries
@@ -16,7 +19,7 @@ matrix:
         sources:
           - ubuntu-toolchain-r-test
         packages:
-          - doxygen
+          # - doxygen
           - realpath
           - gcc-4.9
           - g++-4.9
@@ -27,33 +30,37 @@ matrix:
     # osx_image: xcode10.1
     compiler: clang
     env: TARGET="osx" OF_BRANCH="master"
-    addons:
-      homebrew:
-        packages:
-          - doxygen
-        update: true
+    # addons:
+    #   homebrew:
+    #     packages:
+    #       - doxygen
+    #     update: true
         
-
-
 # before_install:
 install:
-  - git clone --depth=1 --branch=master https://github.com/openFrameworks/openFrameworks.git ~/openFrameworks
-  - /usr/bin/env bash ~/openFrameworks/scripts/ci/addons/install.sh
-  - git clone https://github.com/bakercp/ofx.git ~/openFrameworks/scripts/ofx
+  # - git clone --depth=1 --branch=master https://github.com/openFrameworks/openFrameworks.git ~/openFrameworks
+  # - /usr/bin/env bash ~/openFrameworks/scripts/ci/addons/install.sh
+  # - git clone https://github.com/bakercp/ofx.git ~/openFrameworks/scripts/ofx
 script:
-  -  /usr/bin/env bash ~/openFrameworks/scripts/ofx/ofx ci script ${TRAVIS_REPO_SLUG#*/}
+  # -  /usr/bin/env bash ~/openFrameworks/scripts/ofx/ofx ci script ${TRAVIS_REPO_SLUG#*/}
 # after_script:
 # after_success:
 # after_failure:
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  local_dir: /home/travis/openFrameworks/addons/${TRAVIS_REPO_SLUG#*/}/docs/html
-  on:
-    branch: master
 
-git:
-  depth: 1
-  quiet: true
+jobs:
+  include:
+    - stage: deploy
+      addons:
+        apt:
+          packages:
+            - doxygen
+      script: doxygen docs/Doxyfile
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep_history: true
+        local_dir: html
+        on:
+          branch: master
+  

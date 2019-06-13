@@ -33,15 +33,6 @@ matrix:
           - doxygen
         update: true
         
-  - os: osx
-    # osx_image: xcode10.1
-    compiler: clang
-    env: TARGET="osx" OF_BRANCH="master"
-    addons:
-      homebrew:
-        packages:
-          - doxygen
-        update: true
 
 
 # before_install:
@@ -54,7 +45,6 @@ script:
 # after_script:
 # after_success:
 # after_failure:
-
 deploy:
   provider: pages
   skip_cleanup: true

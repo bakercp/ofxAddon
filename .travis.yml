@@ -55,8 +55,9 @@ jobs:
           packages:
             - doxygen
       script: 
-        - sed -i'.bak' -e 's|docs/||g' README.md # Remove docs/ prefix from README.md for linking.
+        - cp *.md docs/
         - cd docs # Switch to the documentation directory.
+        - sed -i'.bak' -e 's|docs/||g' *.md # Remove docs/ prefix from all .md files for linking.
         - doxygen Doxyfile # Generate the documentation.
         - touch html/.nojekyll # Github pages will discard files beginning w/ underscores without this.
       deploy:

@@ -94,7 +94,6 @@ script:
 
 jobs:
   include:
-    - stage: Deploy Documentation
       script: 
         # Install a more recent version of Doxygen.
         - git clone --depth=1 --branch Release_1_8_15 https://github.com/doxygen/doxygen.git; cd doxygen; mkdir build; cd build; cmake -G "Unix Makefiles" ..; make -s && sudo make install; cd ../..
@@ -105,6 +104,7 @@ jobs:
         - sed -i'.bak' -e 's|../../..|https://github.com/'"$TRAVIS_REPO_SLUG"'|g' *.md # Fix any links to the Github pages.
         - doxygen Doxyfile # Generate the documentation.
         - touch html/.nojekyll # Github pages will discard files beginning w/ underscores without this.
+    - stage: Deploy Documentation
       deploy:
         provider: pages
         skip_cleanup: true

@@ -55,11 +55,9 @@ jobs:
           packages:
             - doxygen
       script: 
-        - pwd 
-        - ls -la
         - cd docs
         - doxygen Doxyfile
-        - touch htom/.nojekyll
+        - touch html/.nojekyll
       deploy:
         provider: pages
         skip_cleanup: true

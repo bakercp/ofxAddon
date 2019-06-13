@@ -33,6 +33,17 @@ matrix:
           - doxygen
         update: true
         
+  - os: osx
+    # osx_image: xcode10.1
+    compiler: clang
+    env: TARGET="osx" OF_BRANCH="master"
+    addons:
+      homebrew:
+        packages:
+          - doxygen
+        update: true
+
+
 # before_install:
 install:
   - git clone --depth=1 --branch=master https://github.com/openFrameworks/openFrameworks.git ~/openFrameworks

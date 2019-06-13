@@ -44,6 +44,15 @@ script:
 # after_success:
 # after_failure:
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: ~/openFrameworks/addons/${TRAVIS_REPO_SLUG#*/}/docs/html
+  on:
+    branch: master
+
 git:
   depth: 1
   quiet: true

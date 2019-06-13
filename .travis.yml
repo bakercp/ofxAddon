@@ -26,11 +26,11 @@ matrix:
   #         - gdb
 
   - os: linux
-    sudo: required
     dist: trusty
-    env: TARGET="linuxarmv6l"
-
-  #   cache: ccache
+    sudo: required
+    cache: ccache
+    env: 
+      - TARGET=linuxarmv6l
 
 
   # - os: linux

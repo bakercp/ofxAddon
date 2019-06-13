@@ -50,18 +50,12 @@ script:
 jobs:
   include:
     - stage: deploy
-      addons:
-        apt:
-          packages:
-            - doxygen
+      # addons:
+      #   apt:
+      #     packages:
+      #       - doxygen
       script: 
-        - git clone --branch Release_1_8_15 https://github.com/doxygen/doxygen.git
-        - cd doxygen
-        - mkdir build
-        - cd build
-        - cmake -G "Unix Makefiles" ..
-        - make && make install
-        - cd ../..
+        - git clone --depth=1 --branch Release_1_8_15 https://github.com/doxygen/doxygen.git; cd doxygen; mkdir build; cd build; cmake -G "Unix Makefiles" ..; make && sudo make install; cd ../..
         - cp *.md docs/
         - cd docs # Switch to the documentation directory.
         - sed -i'.bak' -e 's|docs/||g' *.md # Remove docs/ prefix from all .md files for linking.

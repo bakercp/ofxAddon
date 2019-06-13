@@ -2,7 +2,7 @@
 
 ## Description
 
-An addon template for openFrameworks.
+An addon template for [openFrameworks](https://openframeworks.cc).
 
 ## Features
 
@@ -92,7 +92,6 @@ See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
-
 
 ## Licensing
 

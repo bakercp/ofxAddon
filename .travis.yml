@@ -54,6 +54,7 @@ matrix:
 # before_install:
 install:
   - git clone --depth=1 --branch=master https://github.com/openFrameworks/openFrameworks.git ~/openFrameworks
+  - echo $TARGET
   - /usr/bin/env bash ~/openFrameworks/scripts/ci/addons/install.sh
   - git clone https://github.com/bakercp/ofx.git ~/openFrameworks/scripts/ofx
 script:

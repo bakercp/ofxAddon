@@ -1,3 +1,3 @@
 # Troubleshooting
 
-There are not troubleshooting steps yet.
+There are no additional _Troubleshooting_ notes at steps time.

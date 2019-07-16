@@ -1,10 +1,10 @@
 # Contributing
 
-# Code of Conduct
+## Code of Conduct
 
 First, please see the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-# What needs work?
+## How to Help
 
 Check out the [Todo](TODO.md) list to see if there are any planned items.
 
@@ -14,10 +14,10 @@ Check out the [Help Wanted](../../../issues?q=is%3Aissue+is%3Aopen+label%3A%22he
 
 Pull Requests are always welcome, so if you make any improvements please feel free to float them back upstream :)
 
-1.  Fork this repository.
-2.  Create your feature branch (`git checkout -b my-new-feature`).
-3.  Commit your changes (`git commit -am 'Add some feature'`).
-4.  Push to the branch (`git push origin my-new-feature`).
-5.  Create new Pull Request.
+1. Fork this repository.
+2. Create your feature branch (`git checkout -b my-new-feature`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin my-new-feature`).
+5. Create new Pull Request.
 
 Contributed code should have tests to confirm functionality and inline Doxygen documentation.

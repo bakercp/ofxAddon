@@ -8,40 +8,51 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## \[Unreleased\]
 
 ### Added
--   None.
+
+- None.
 
 ### Changed
--   None.
+
+- None.
 
 ### Deprecated
--   None.
+
+- None.
 
 ### Removed
--   None.
+
+- None.
 
 ### Fixed
--   None.
+
+- None.
 
 ### Security
--   None.
 
-\[1.0.0\] 2019-01-01
-##
+- None.
+
+## \[1.0.0\] 2019-01-01
 
 ### Added
--   None.
+
+- None.
 
 ### Changed
--   None.
+
+- None.
 
 ### Deprecated
--   None.
+
+- None.
 
 ### Removed
--   None.
+
+- None.
 
 ### Fixed
--   None.
+
+- None.
 
 ### Security
--   None.
+
+- None.

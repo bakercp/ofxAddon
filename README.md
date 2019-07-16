@@ -6,7 +6,7 @@ An addon template for [openFrameworks](https://openframeworks.cc).
 
 ## Features
 
--   An important feature.
+- An important feature.
 
 ## Getting Started
 
@@ -14,13 +14,13 @@ An addon template for [openFrameworks](https://openframeworks.cc).
 
 Every effort is made to keep the repository small. Thus sometimes third-party libraries need to be compiled and example data needs to be downloaded. The bootstrap script takes care of this.
 
--   From the `scripts/` directory ...
-    -   `./bootstrap.sh`
+- From the `scripts/` directory ...
+  - `./bootstrap.sh`
 
 ### Generate Project Files
 
-1.   Generate the example project files using the openFrameworks [Project Generator](http://openframeworks.cc/learning/01_basics/how_to_add_addon_to_project/).
-2.   Open the Project Files in your Integrated Development Environment (IDE), or run `make && make run` from the example directory.
+1. Generate the example project files using the openFrameworks [Project Generator](http://openframeworks.cc/learning/01_basics/how_to_add_addon_to_project/).
+1. Open the Project Files in your Integrated Development Environment (IDE), or run `make && make run` from the example directory.
 
 For more, see the [Getting Started](docs/GETTING_STARTED.md) guide.
 
@@ -34,7 +34,7 @@ API documentation can be found [here](https://bakercp.github.io/ofxAddon/).
 
 ## Requirements
 
--   A list of any requirements, additional addons, etc.
+- A list of any requirements, additional addons, etc.
 
 ## Compatibility
 
@@ -60,10 +60,9 @@ API documentation can be found [here](https://bakercp.github.io/ofxAddon/).
 | **Incompatible** |   ❌   |
 | **Unknown**      |   ❓   |
 
-
 ### Build Status
 
-Linux, macOS 
+Linux, macOS
 
 Visual Studio, MSYS2 [![Build status](https://ci.appveyor.com/api/projects/status/krr0ck8ffida8nsj/branch/master?svg=true)](https://ci.appveyor.com/project/bakercp/ofxio/branch/master)
 

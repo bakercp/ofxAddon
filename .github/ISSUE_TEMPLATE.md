@@ -1,5 +1,6 @@
-Your issue may already be reported!
-Please search on the [Issue Tracker](../) before creating one.
+# New Issue Guidelines
+
+_Your issue may already be reported! Please search on the [Issue Tracker](../) before creating one._
 
 ## Expected Behavior
 <!--- If you're describing a bug, tell us what should happen -->
@@ -16,10 +17,11 @@ Please search on the [Issue Tracker](../) before creating one.
 ## Steps to Reproduce (for bugs)
 <!--- Provide a link to a live example, or an unambiguous set of steps to -->
 <!--- reproduce this bug. Include code to reproduce, if relevant -->
-1.
-2.
-3.
-4.
+
+1. Step 1.
+2. Step 2.
+3. Step 3.
+4. etc.
 
 ## Context
 <!--- How has this issue affected you? What are you trying to accomplish? -->

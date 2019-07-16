@@ -1,19 +1,17 @@
 # Documentation
 
-
-# Getting Started
+## Getting Started
 
 See the [Getting Started](GETTING_STARTED.md) guide.
 
-# Trouble-shooting.
+## Troubleshooting
 
 See the [Troubleshooting](TROUBLESHOOTING.md) guide.
 
-# Code of Conduct
+## Code of Conduct
 
 See the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-# Contributing
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide.
-
